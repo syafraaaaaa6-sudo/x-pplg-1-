@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel data siswa</title>
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+
+    <style>
+        .hero {
+            background-image: url("asset/best.jpeg"); /* ganti dengan gambar kamu */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* efek gelap */
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+     <div class="hero">
+        <div 
+        class="overlay d-flex justify-content-center align-items-center text-center"
+        >
+        <div class="text-white">
+            <h1 class="display-5 fw-bold">Sistem Manajemen Siswa</h1>
+            <p class="fs-4">Kelola data kehadiran, profil, status dan akademik siswa dengan lebih mudah dan efisien.</p>
+            <button class="btn btn-primary btn-Ig">Lihat Tabel</button>
+            <button class="btn btn-outline-primary ">Paduan</button>
+        </div>
+    </div>
+    </div>
+     <div class="container mt-5">
+
+        <!-- Judul halaman -->
+         <div class="text-center mb-4">
+            <h2>Tabel Data Siswa</h2>
+            <p class="text-muted">Contoh penggunaan Tabel, Gambar, dan Button Bootstrap</p>
+         </div>
+    </div>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr class="table-success">
+                <th>No</th>
+                <th>Foto</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody class="align-middle text-align">
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="asset/bunga.jpeg" class="rounded-circle img-fluid" style="width: 80px; height: 80px;object-fit: cover;"></td>
+                    <td>Syafira</td>
+                    <td>X PPLG 1</td>
+                    <td><span class="badge bg-success">Aktif</span></td>
+                    <td>
+                    <button class="btn btn-warning btn-sm edit-btn">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-btn">Hapus</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>
+                    <img src="asset/cikito.jpg" class="rounded-circle img-fluid" style="width: 80px; height: 80px;object-fit: cover;"></td>
+                    <td>QUrrota</td>
+                    <td>X PPLG 2</td>
+                    <td><span class="badge bg-warning">Izim</span></td>
+                    <td>
+                    <button class="btn btn-warning btn-sm edit-btn">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-btn">Hapus</button>
+                    </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>
+                    <img src="asset/bunga.jpeg" class="rounded-circle img-fluid" style="width: 80px; height: 80px;object-fit: cover;"></td>
+                    <td>Aini</td>
+                    <td>X PPLG 3</td>
+                    <td><span class="badge bg-danger">Tidak hadir</span></td>
+                    <td>
+                     <button class="btn btn-warning btn-sm edit-btn">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-btn">Hapus</button>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Tombol Bawah -->
+     <div class="text-center">
+        <button class="btn btn-primary">Tambah Data</button>
+        <button class="btn btn-online-info">Ekspor Excel</button>
+     </div>
+</body>
+</html>
